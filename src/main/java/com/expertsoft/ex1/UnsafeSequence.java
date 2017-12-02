@@ -1,5 +1,8 @@
 package com.expertsoft.ex1;
 
+import com.expertsoft.NotThreadSafe;
+
+@NotThreadSafe
 public class UnsafeSequence {
 
     private int value;
