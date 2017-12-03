@@ -3,20 +3,16 @@ package com.expertsoft.ex1;
 import com.expertsoft.NotThreadSafe;
 
 @NotThreadSafe
-public class UnsafeSequence {
+public class UnsafeSequence implements Sequence {
 
     private int value;
 
-    /**
-     * @return current sequence value
-     */
+    @Override
     public int next() {
         return ++value;
     }
 
-    /**
-     * @return current sequence value
-     */
+    @Override
     public int current() {
         return value;
     }
