@@ -2,7 +2,7 @@ package com.expertsoft.ex3;
 
 public class BadTimer extends Thread {
 
-    // each thread has its local copy of the flag
+    // since the variable is not volatile, flag may not be up to date
     private boolean stop;
 
     @Override
